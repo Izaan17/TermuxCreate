@@ -11,14 +11,17 @@ import TermuxCreate as tc
 / Action to run
 
 def print_input(msg):
-print(msg)
+	print(msg)
 
 
 / You add the commands you want to use 
 
 tc.add_command(command='testcommand', arguments=1, cmdinfo="[+] prints whatever u type.", action=print_input)
+
     | command /  We set a command name whenever we type it this name will be used to access the function.
+	
     | arguments / We input a number of required arguments for a function 
+	
     | action / Function to call when success of this command.
 
 / We create a function to get input
