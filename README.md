@@ -1,5 +1,6 @@
 # TermuxCreate
 Template for creating terminal based scripts in python.
+
 ---USAGE---
 / Import termuxcreate
 import TermuxCreate as tc
