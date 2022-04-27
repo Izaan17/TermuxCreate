@@ -11,8 +11,7 @@ import TermuxCreate as tc
 / Action to run
 
 def print_input(msg):
-
-    print(msg)
+print(msg)
 
 
 / You add the commands you want to use 
