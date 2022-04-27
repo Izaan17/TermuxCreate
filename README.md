@@ -1,7 +1,7 @@
 # TermuxCreate
 Template for creating terminal based scripts in python.
 
-# ---USAGE---
+---USAGE---
 
 / Import termuxcreate
 
@@ -11,6 +11,7 @@ import TermuxCreate as tc
 / Action to run
 
 def print_input(msg):
+
     print(msg)
 
 
