@@ -1,7 +1,7 @@
 # TermuxCreate
 Template for creating terminal based scripts in python.
 
----USAGE---
+# ---USAGE---
 
 / Import termuxcreate
 
