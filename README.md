@@ -19,7 +19,7 @@
     
     | action / Function to call when success of this command.
 
-## We create a function to get input
+### We create a function to get input
 	def terminal():
           while 1:
 		input_ = input("shell> ")
@@ -29,17 +29,23 @@
 		    / we use 0 to get the command name
 		    if not cmd_result:
 			print(msg)
-	   |  def terminal() 
-	   / we can create an loop to get input forever to feed the terminal input.
+####	   |  def terminal() 
+	   / we can create a loop to get input forever to feed the terminal input.
+
+####       |  input_ = input("shell> ")
+       / we get constant input to feed termX.
 	   
-	   |  command = input_.split() 
+####	   |  command = input_.split() 
 	   / this is the full command along with arguments passed, we need to supply this to tc.cmd_result()
 	   
-       |  cmd_result, msg = tc.cmd_result(command=command[0], input_=input_)/ tc.cmd_result() 
+####       |  cmd_result, msg = tc.cmd_result(command=command[0], input_=input_)
+       / cmd_result is the result of the command meaning if it was executed properly.
+            - if it did not execute properly it returns false (arguments not supplied etc).
+       / msg returns the error msg
        / returns two values which are either 'True' or 'False' and if the command passed the arg check and the error msg if it did not pass.
 	   
-	   |  if command: 
+####	   |  if command: 
 	   / We use this in order to prevent no input from passing through.
 	   
-	   |  if not cmd_result: print(msg) 
+####	   |  if not cmd_result: print(msg) 
 	   / this means if the command result turns out to be false print the error message.
