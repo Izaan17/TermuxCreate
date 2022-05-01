@@ -1,6 +1,6 @@
 ## USAGE
-### Importing termuxcreate
-    import TermuxCreate as tc
+### Importing termXcreate
+    import termXcreate as tc
 
 
 ### Action to run (function to run when command is executed)
